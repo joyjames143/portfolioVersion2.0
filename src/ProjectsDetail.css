@@ -1,0 +1,203 @@
+.project-detail-main{
+    height: 100vh;
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-shrink: 1;
+}
+
+.project-card{
+   min-height: 100vh;
+   flex-grow: 1.1;
+   position: sticky;
+
+}
+
+.leftside-p{
+    background-color:yellow;
+    min-height: 100vh;
+    min-width: 320px;
+    background-image: url('./Pictures/Instagram\ Story\ 1080x1920\ px\ \(5\).jpeg');
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1.1;
+}
+.project-card:hover .fade-side-p{
+    opacity: 0.5;
+}
+.fade-side-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(34,25,30);
+    transition: .5s ease;
+    opacity: 0;
+}
+.rightside-p{
+    overflow-y: auto;
+   height: 100%;
+  
+   background-image: url("./Pictures/project-detail.jpeg");
+   background-size: cover;
+   background-position: center;
+   flex-grow: 3;
+}
+.rightside-p::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .rightside-p::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px none;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .rightside-p::-webkit-scrollbar-thumb {
+    background: #ff6100;
+    border-radius: 10px;
+  }
+
+.all-project-cards{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{  
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 50px 150px 130px;
+    grid-template-areas: "text" "image" "links";
+    font-family: roboto;
+    border-radius: 18px;
+    background: none;
+    box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin-left: 26px;
+    margin-top: 30px;
+}
+
+.card-image{
+    grid-area: "image";
+    background: url("./Pictures/ecomerce.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-image.two{
+    grid-area: "image";
+    background: url("./Pictures/database.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-image.three{
+    grid-area: "image";
+    background: url("./Pictures/expense.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-image.four{
+    grid-area: "image";
+    background: url("./Pictures/weather.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-image.five{
+    grid-area: "image";
+    background: url("./Pictures/codepen.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-image.six{
+    grid-area: "image";
+    background: url("./Pictures/corona.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-image.seven{
+    grid-area: "image";
+    background: url("./Pictures/cricket.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-image.eight{
+    grid-area: "image";
+    background: url("./Pictures/zoom.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 10px;
+}
+.card-text{
+    grid-area: "text";
+    margin-top: 10px;
+}
+.card-text h2{
+    color: #ff6100;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 28px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.card-links{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: "links";
+}
+.card-btn-div{
+    flex-grow: 1;
+    height: 10px;
+    width: 100%;
+   margin-top: -17px;
+   margin-bottom: 2px;
+}
+
+.card-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;    
+    padding: 10px 20.5px;
+    font-size: 15px;
+    font-weight: 100;
+    flex-grow: 1;
+    text-decoration: none;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    font-weight: bold; 
+    overflow: hidden;
+    letter-spacing: 3px;
+    color: #fff;
+    background: none;
+    text-transform: uppercase;
+    transition: .1s all ease-in;
+    border: ridge  #fc588d;
+}
+.no{
+    text-decoration: line-through;
+}
+.card-btn:hover{
+    background: #fc588d;
+    opacity: 0.7;
+
+}
+
+
+.git{
+    margin-top: 12px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}

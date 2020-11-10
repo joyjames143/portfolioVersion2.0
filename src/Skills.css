@@ -1,0 +1,76 @@
+.skill{
+    height :100vh;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+}
+
+.the-card-s{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.the-card-s:hover .back-side-s{
+    opacity: 0.71;
+}
+
+.front-side-s{
+    position: absolute;
+    background-color:yellow;
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    background-image: url('./Pictures/skill-picture.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.back-side-s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: .5s ease;
+    background-color:rgb(254,236,90);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.btn-s{
+    border:2px solid #2874A6 ;
+    background: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.8s;
+    overflow: hidden;
+    color:#fff;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.btn-s:hover{
+    color:#2874A6 
+    ;
+}
+
+.btn-s::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #2874A6 
+    ;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    height: 180%;
+}
+.btn-s:hover::before{
+    height: 0;
+}

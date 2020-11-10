@@ -1,0 +1,190 @@
+.skill-detail-main{
+    height: 100vh;
+   display: flex;
+   flex-direction: row;
+}
+
+.skill-card{
+   height: 100%;
+   flex-grow: 1.1;
+   position: relative;
+}
+
+.leftside-s{
+   background-color:yellow;
+   height: 100%;
+   background-image: url('./Pictures/skill-picture.jpeg');
+   background-size: cover;
+   background-position: center;
+   flex-grow: 1.1;
+
+}
+.skill-card:hover .fade-side-s{
+   opacity: 0.5;
+}
+.fade-side-s{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 0;
+   left: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color:rgb(254,236,90);
+   transition: .5s ease;
+   opacity: 0;
+}
+.rightside-s{
+    overflow-y: auto;
+   width: 100px;
+   height: 100%;
+   flex-grow: 3;
+   background-image: url("./Pictures/skillDetail.jpeg");
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+.all-cards-s{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr ));
+    grid-gap: 23px;
+    margin: 0 auto;
+    margin-top: 11px;
+}
+.all-cards-s .card-one-s{
+    position: relative;
+    width: 250px;
+    height: 185px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background:  #EC7063 ;
+    box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.9);
+}
+
+.all-cards-s .card-one-s .face{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-cards-s .card-one-s .face.face1{
+    margin-left: -2px;
+    align-items: initial;
+}
+.all-cards-s .card-one-s .face.face2{
+    border-radius: 20px;
+    background: tomato;
+    transition: 0.5s;
+}
+.all-cards-s .card-one-s:hover .face.face2{
+    height: 60px;
+}
+.all-cards-s .card-one-s .face.face2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(187,43,34,0.5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px ;
+}
+
+.all-cards-s .card-one-s .face.face2 .icon-sd{
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.all-cards-s .card-one-s:hover .face.face2 .icon-sd{
+    font-size: 2em;
+}
+
+
+.content-s p{
+    color:  wheat;
+    padding-left: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 12px;
+    margin-top: -15px;
+}
+.content-s h2{
+    display: flex;
+    justify-content: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+}
+
+.all-cards-s .card-one-s.color-11{
+    background: #3498DB  ;
+}
+.all-cards-s .card-one-s .color-12.face.face2{
+    background: #2874A6;
+}
+.all-cards-s .card-one-s .color-12.face.face2::before {
+    background: rgb(33, 97, 140,0.5)
+}
+
+.all-cards-s .card-one-s.color-21{
+    background: #F4D03F
+    ;
+}
+.all-cards-s .card-one-s .color-22.face.face2{
+    background:#F1C40F  ;
+}
+.all-cards-s .card-one-s .color-22.face.face2::before {
+    background: rgb(183, 149, 11,0.5)
+}
+
+.all-cards-s .card-one-s.color-31{
+    background: #7BBBE5
+    ;
+}
+.all-cards-s .card-one-s .color-32.face.face2{
+    background:#67ACDA  ;
+}
+.all-cards-s .card-one-s .color-32.face.face2::before {
+    background: rgb(54, 138, 194,0.5)
+}
+
+.all-cards-s .card-one-s.color-41{
+    background: #DC7633 
+    ;
+}
+.all-cards-s .card-one-s .color-42.face.face2{
+    background:#D35400 ;
+}
+.all-cards-s .card-one-s .color-42.face.face2::before {
+    background: rgb(135, 54, 0   ,0.5)
+}
+
+.all-cards-s .card-one-s.color-51{
+    background: #44AB43 
+    ;
+}
+.all-cards-s .card-one-s .color-52.face.face2{
+    background:#328E31  ;
+}
+.all-cards-s .card-one-s .color-52.face.face2::before {
+    background: rgb(22, 90, 21 ,0.5)
+}
+
+.all-cards-s .card-one-s.color-61{
+    background: #62C78B 
+    ;
+}
+.all-cards-s .card-one-s .color-62.face.face2{
+    background:#3D9B63  ;
+}
+.all-cards-s .card-one-s .color-62.face.face2::before {
+    background: rgb(40, 103, 66 ,0.5)
+}

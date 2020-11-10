@@ -1,0 +1,73 @@
+.contact{
+    height :100vh;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+}
+
+.the-card-c{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.the-card-c:hover .back-side-c{
+    opacity: 0.7;
+}
+
+.front-side-c{
+    position: absolute;
+    background-color:yellow;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('./Pictures/contact-picture.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.back-side-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: .5s ease;
+    background-color:rgb(254,212,66);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.btn-c{
+    border:2px solid #c91f20;
+    background: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.8s;
+    overflow: hidden;
+    color: #c91f20;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-c:hover{
+    color: rgb(254,212,66);
+}
+
+.btn-c::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #c91f20;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius:50% 50% 0 0;
+}
+.btn-c:hover::before{
+    height: 180%;
+}
